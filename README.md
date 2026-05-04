@@ -2,85 +2,72 @@
 
 Backend API developed as Project 3 for the DecodeLabs Full Stack Internship.
 
-## Technologies
+## 🚀 Technologies
 
 * Node.js
 * Express.js
 * SQLite3
 
-## Features
+## ✨ Features
 
-* Database integration with SQLite
+* SQLite database integration
 * Simple schema design
 * Full CRUD operations
 * JSON request and response handling
-* Basic data validation
-* Parameterized SQL queries
+* Basic validation
+* Parameterized SQL queries (secure)
 
-## Database Schema
+## 📊 Database Schema
 
 Table: `runners`
 
-Fields:
+* `id` — INTEGER PRIMARY KEY AUTOINCREMENT
+* `name` — TEXT NOT NULL
+* `goal` — TEXT NOT NULL
 
-* `id` - INTEGER PRIMARY KEY AUTOINCREMENT
-* `name` - TEXT NOT NULL
-* `goal` - TEXT NOT NULL
+## ⚙️ How to Run
 
-## API Endpoints
+1. Install dependencies:
 
-### GET /
-
-Checks if the API is running.
-
-### GET /runners
-
-Returns all runners.
-
-### GET /runners/:id
-
-Returns one runner by ID.
-
-### POST /runners
-
-Creates a new runner.
-
-Example body:
-
-```json
-{
-  "name": "John",
-  "goal": "10km"
-}
+```bash
+npm install
 ```
 
-### PUT /runners/:id
+2. Start the server:
 
-Updates an existing runner.
-
-Example body:
-
-```json
-{
-  "name": "John Updated",
-  "goal": "21km"
-}
+```bash
+node server.js
 ```
 
-### DELETE /runners/:id
+3. Server runs on:
 
-Deletes a runner by ID.
+```text
+http://localhost:3000
+```
 
-## Learning Objectives
+## 🔗 Frontend Integration
 
-This project demonstrates:
+This API is consumed by the RunFlow frontend:
 
-* backend and database integration
-* schema design
-* CRUD operations
-* proper data handling
-* secure parameterized SQL queries
+👉 https://github.com/brotherson10/runflow-frontend
 
-## Author
+The frontend uses this API to:
+
+* Fetch runners from the database
+* Display runners dynamically
+* Create new runners through a form
+
+## 🧠 What I Learned
+
+* Backend and database integration
+* Schema design and data persistence
+* CRUD operations with real database
+* API development with Express
+* Error handling and validation
+
+## 👨‍💻 Author
 
 Brotherson Américo
+
+GitHub: https://github.com/brotherson10
+LinkedIn: https://www.linkedin.com/in/brotherson/
